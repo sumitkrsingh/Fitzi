@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FitziMainViewController.h"
 
 @interface ViewController : UIViewController
+
+- (IBAction)swipeDownToNextScreen:(id)sender;
 
 @end

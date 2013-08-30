@@ -18,6 +18,19 @@
 		974C848217CDB30D00E4B43C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 974C848117CDB30D00E4B43C /* Default-568h@2x.png */; };
 		974C848517CDB30D00E4B43C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 974C848317CDB30D00E4B43C /* MainStoryboard.storyboard */; };
 		974C848817CDB30D00E4B43C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C848717CDB30D00E4B43C /* ViewController.m */; };
+		974C849017CDB4BD00E4B43C /* FitziMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 974C848F17CDB4BD00E4B43C /* FitziMainViewController.m */; };
+		9783A43A17CFD5CC00499CD0 /* leftBottomButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9783A43617CFD5CC00499CD0 /* leftBottomButton.png */; };
+		9783A43B17CFD5CC00499CD0 /* leftTopButon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9783A43717CFD5CC00499CD0 /* leftTopButon.png */; };
+		9783A43C17CFD5CC00499CD0 /* MenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9783A43817CFD5CC00499CD0 /* MenuButton.png */; };
+		9783A43D17CFD5CC00499CD0 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 9783A43917CFD5CC00499CD0 /* Title.png */; };
+		97B8FB8A17CFC297008C7F59 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B8FB8817CFC297008C7F59 /* bg.jpg */; };
+		97B8FB8B17CFC297008C7F59 /* bg02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B8FB8917CFC297008C7F59 /* bg02.jpg */; };
+		97B8FB8E17CFC4BD008C7F59 /* FitziIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8FB8D17CFC4BD008C7F59 /* FitziIndexView.m */; };
+		97B8FB9017CFC4E3008C7F59 /* FitziIndexView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97B8FB8F17CFC4E3008C7F59 /* FitziIndexView.xib */; };
+		97B8FB9217CFCDC5008C7F59 /* nav.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97B8FB9117CFCDC5008C7F59 /* nav.jpg */; };
+		97C4AF6517D116CD0047DF29 /* FitEvolutionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C4AF6317D116CD0047DF29 /* FitEvolutionView.m */; };
+		97C4AF6617D116CD0047DF29 /* FitEvolutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C4AF6417D116CD0047DF29 /* FitEvolutionView.xib */; };
+		97C4AF6817D11B7D0047DF29 /* textbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 97C4AF6717D11B7D0047DF29 /* textbg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +50,22 @@
 		974C848417CDB30D00E4B43C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		974C848617CDB30D00E4B43C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		974C848717CDB30D00E4B43C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		974C848E17CDB4BD00E4B43C /* FitziMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitziMainViewController.h; sourceTree = "<group>"; };
+		974C848F17CDB4BD00E4B43C /* FitziMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitziMainViewController.m; sourceTree = "<group>"; };
+		9783A43617CFD5CC00499CD0 /* leftBottomButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftBottomButton.png; path = Images/leftBottomButton.png; sourceTree = "<group>"; };
+		9783A43717CFD5CC00499CD0 /* leftTopButon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftTopButon.png; path = Images/leftTopButon.png; sourceTree = "<group>"; };
+		9783A43817CFD5CC00499CD0 /* MenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuButton.png; path = Images/MenuButton.png; sourceTree = "<group>"; };
+		9783A43917CFD5CC00499CD0 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = Images/Title.png; sourceTree = "<group>"; };
+		97B8FB8817CFC297008C7F59 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = Images/bg.jpg; sourceTree = "<group>"; };
+		97B8FB8917CFC297008C7F59 /* bg02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg02.jpg; path = Images/bg02.jpg; sourceTree = "<group>"; };
+		97B8FB8C17CFC4BD008C7F59 /* FitziIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitziIndexView.h; sourceTree = "<group>"; };
+		97B8FB8D17CFC4BD008C7F59 /* FitziIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitziIndexView.m; sourceTree = "<group>"; };
+		97B8FB8F17CFC4E3008C7F59 /* FitziIndexView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitziIndexView.xib; sourceTree = "<group>"; };
+		97B8FB9117CFCDC5008C7F59 /* nav.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nav.jpg; path = Images/nav.jpg; sourceTree = "<group>"; };
+		97C4AF6217D116CC0047DF29 /* FitEvolutionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitEvolutionView.h; sourceTree = "<group>"; };
+		97C4AF6317D116CD0047DF29 /* FitEvolutionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FitEvolutionView.m; sourceTree = "<group>"; };
+		97C4AF6417D116CD0047DF29 /* FitEvolutionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FitEvolutionView.xib; sourceTree = "<group>"; };
+		97C4AF6717D11B7D0047DF29 /* textbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textbg.png; path = Images/textbg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +117,15 @@
 				974C848317CDB30D00E4B43C /* MainStoryboard.storyboard */,
 				974C848617CDB30D00E4B43C /* ViewController.h */,
 				974C848717CDB30D00E4B43C /* ViewController.m */,
+				974C848E17CDB4BD00E4B43C /* FitziMainViewController.h */,
+				974C848F17CDB4BD00E4B43C /* FitziMainViewController.m */,
+				97B8FB8C17CFC4BD008C7F59 /* FitziIndexView.h */,
+				97B8FB8D17CFC4BD008C7F59 /* FitziIndexView.m */,
+				97B8FB8F17CFC4E3008C7F59 /* FitziIndexView.xib */,
+				97C4AF6217D116CC0047DF29 /* FitEvolutionView.h */,
+				97C4AF6317D116CD0047DF29 /* FitEvolutionView.m */,
+				97C4AF6417D116CD0047DF29 /* FitEvolutionView.xib */,
+				9772326317CFB80E00DC4CCA /* Images */,
 				974C847217CDB30D00E4B43C /* Supporting Files */,
 			);
 			path = Fitzi;
@@ -105,6 +143,21 @@
 				974C848117CDB30D00E4B43C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9772326317CFB80E00DC4CCA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				97C4AF6717D11B7D0047DF29 /* textbg.png */,
+				9783A43617CFD5CC00499CD0 /* leftBottomButton.png */,
+				9783A43717CFD5CC00499CD0 /* leftTopButon.png */,
+				9783A43817CFD5CC00499CD0 /* MenuButton.png */,
+				9783A43917CFD5CC00499CD0 /* Title.png */,
+				97B8FB9117CFCDC5008C7F59 /* nav.jpg */,
+				97B8FB8817CFC297008C7F59 /* bg.jpg */,
+				97B8FB8917CFC297008C7F59 /* bg02.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +216,16 @@
 				974C848017CDB30D00E4B43C /* Default@2x.png in Resources */,
 				974C848217CDB30D00E4B43C /* Default-568h@2x.png in Resources */,
 				974C848517CDB30D00E4B43C /* MainStoryboard.storyboard in Resources */,
+				97B8FB8A17CFC297008C7F59 /* bg.jpg in Resources */,
+				97B8FB8B17CFC297008C7F59 /* bg02.jpg in Resources */,
+				97B8FB9017CFC4E3008C7F59 /* FitziIndexView.xib in Resources */,
+				97B8FB9217CFCDC5008C7F59 /* nav.jpg in Resources */,
+				9783A43A17CFD5CC00499CD0 /* leftBottomButton.png in Resources */,
+				9783A43B17CFD5CC00499CD0 /* leftTopButon.png in Resources */,
+				9783A43C17CFD5CC00499CD0 /* MenuButton.png in Resources */,
+				9783A43D17CFD5CC00499CD0 /* Title.png in Resources */,
+				97C4AF6617D116CD0047DF29 /* FitEvolutionView.xib in Resources */,
+				97C4AF6817D11B7D0047DF29 /* textbg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +239,9 @@
 				974C847817CDB30D00E4B43C /* main.m in Sources */,
 				974C847C17CDB30D00E4B43C /* AppDelegate.m in Sources */,
 				974C848817CDB30D00E4B43C /* ViewController.m in Sources */,
+				974C849017CDB4BD00E4B43C /* FitziMainViewController.m in Sources */,
+				97B8FB8E17CFC4BD008C7F59 /* FitziIndexView.m in Sources */,
+				97C4AF6517D116CD0047DF29 /* FitEvolutionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +366,7 @@
 				974C848D17CDB30D00E4B43C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

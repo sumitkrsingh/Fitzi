@@ -1,23 +1,133 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12A269" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nav.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GgQ-LM-Ckg"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GgQ-LM-Ckg" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="1gp-sG-94p"/>
+                            <constraint firstItem="GgQ-LM-Ckg" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="Fe0-kW-sre"/>
+                            <constraint firstItem="GgQ-LM-Ckg" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="PPI-gK-5Df"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="z1y-NF-LKu" appends="YES" id="43j-Up-79T"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="xwH-8n-fN3"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="view" destination="5" id="W2K-fa-pqD"/>
+                        <segue destination="hlx-Mf-Mha" kind="modal" identifier="MainScreen" id="TRE-w7-xVP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="z1y-NF-LKu">
+                    <connections>
+                        <action selector="swipeDownToNextScreen:" destination="2" id="osj-oO-vTL"/>
+                        <outlet property="delegate" destination="2" id="2mn-2m-dfm"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-2782" y="-3479"/>
+        </scene>
+        <!--Fitzi Main View Controller-->
+        <scene sceneID="yvM-Mx-eKG">
+            <objects>
+                <viewController storyboardIdentifier="MainScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hlx-Mf-Mha" customClass="FitziMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbA-q7-Mjv">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg02.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tpu-4s-xTW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="750" id="0ck-X1-Q8h"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYe-f0-ynr">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="O6I-T2-zQZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1Ty-DU-At6"/>
+                                    <constraint firstAttribute="height" constant="47" id="EQ7-wh-Vcw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwK-8I-NJr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6Y6-SH-stX"/>
+                                    <constraint firstAttribute="width" constant="40" id="csG-hx-9Fx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="leftBottomButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtU-S3-a9r">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="Meh-9Z-u95"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="MenuButton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZwK-8I-NJr" secondAttribute="bottom" constant="14" id="3o7-DE-35X"/>
+                            <constraint firstItem="O6I-T2-zQZ" firstAttribute="top" secondItem="nbA-q7-Mjv" secondAttribute="top" constant="23" id="7od-zY-0fE"/>
+                            <constraint firstAttribute="trailing" secondItem="sYe-f0-ynr" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8i2-ou-CMb"/>
+                            <constraint firstItem="tpu-4s-xTW" firstAttribute="centerY" secondItem="nbA-q7-Mjv" secondAttribute="centerY" type="default" id="A9h-Wf-69W"/>
+                            <constraint firstItem="sYe-f0-ynr" firstAttribute="centerY" secondItem="tpu-4s-xTW" secondAttribute="centerY" type="default" id="GJN-JU-ARC"/>
+                            <constraint firstItem="sYe-f0-ynr" firstAttribute="top" secondItem="nbA-q7-Mjv" secondAttribute="top" constant="81" id="HDE-JS-swN"/>
+                            <constraint firstItem="ZwK-8I-NJr" firstAttribute="leading" secondItem="nbA-q7-Mjv" secondAttribute="leading" constant="13" id="J9b-1U-Wqy"/>
+                            <constraint firstItem="qtU-S3-a9r" firstAttribute="bottom" secondItem="ZwK-8I-NJr" secondAttribute="bottom" type="default" id="PlH-VV-Y8M"/>
+                            <constraint firstItem="O6I-T2-zQZ" firstAttribute="centerX" secondItem="sYe-f0-ynr" secondAttribute="centerX" type="default" id="aoo-e8-ZWi"/>
+                            <constraint firstItem="qtU-S3-a9r" firstAttribute="centerX" secondItem="sYe-f0-ynr" secondAttribute="centerX" type="default" id="b0P-fx-Nwf"/>
+                            <constraint firstItem="sYe-f0-ynr" firstAttribute="leading" secondItem="nbA-q7-Mjv" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kx4-aJ-h4W"/>
+                            <constraint firstItem="tpu-4s-xTW" firstAttribute="trailing" secondItem="nbA-q7-Mjv" secondAttribute="trailing" type="default" id="nud-JB-XkJ"/>
+                            <constraint firstItem="ZwK-8I-NJr" firstAttribute="top" secondItem="qtU-S3-a9r" secondAttribute="top" type="default" id="thX-te-M4f"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tbk-dR-2Jj"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="targetView" destination="sYe-f0-ynr" id="yRC-jD-Tb9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CnI-X8-JOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1473" y="-3479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuButton.png" width="50" height="48"/>
+        <image name="Title.png" width="100" height="48"/>
+        <image name="bg02.jpg" width="1024" height="768"/>
+        <image name="leftBottomButton.png" width="51" height="49"/>
+        <image name="nav.jpg" width="1024" height="768"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

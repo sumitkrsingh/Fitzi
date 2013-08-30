@@ -26,4 +26,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)swipeDownToNextScreen:(id)sender
+{
+    NSLog(@"Inside Swipe Guesture..");
+    
+//    UIStoryboard *appstoryBoard = [self storyboard];
+//    UIViewController *screen = [appstoryBoard instantiateViewControllerWithIdentifier:@"MainScreen"];
+//    [self presentViewController:screen animated:YES completion:nil];
+    
+ // OR USE ABOVE.. Both Works
+    
+    [self performSegueWithIdentifier:@"MainScreen" sender:sender];
+}
+
 @end
