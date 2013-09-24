@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "FitziMainViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController : UIViewController
+{
+    NSArray *animationImages;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *calibrationImageView;
+@property (strong,nonatomic)  MPMoviePlayerController *theMovie;
 
-- (IBAction)swipeDownToNextScreen:(id)sender;
+- (void)swipeDownToNextScreen:(id)sender;
 
 @end
